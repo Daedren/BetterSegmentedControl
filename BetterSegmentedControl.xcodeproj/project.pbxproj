@@ -1,0 +1,1105 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C92EE51E41A8ADAB5A309A5 /* Pods_BetterSegmentedControl_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A9C8DBDF29FA4096ECB1CD /* Pods_BetterSegmentedControl_Tests.framework */; };
+		D590334CF719CBE096277B9C /* Pods_BetterSegmentedControl_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6CBB502D0B73524E163A5D /* Pods_BetterSegmentedControl_Example.framework */; };
+		FB06F8AE26289C1500158182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8A626289C1500158182 /* ViewController.swift */; };
+		FB06F8AF26289C1500158182 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8A726289C1500158182 /* LaunchScreen.xib */; };
+		FB06F8B026289C1500158182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8A926289C1500158182 /* Main.storyboard */; };
+		FB06F8B126289C1500158182 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8AB26289C1500158182 /* Images.xcassets */; };
+		FB06F8B226289C1500158182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8AC26289C1500158182 /* AppDelegate.swift */; };
+		FB06F8D026289C2000158182 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8B926289C2000158182 /* LICENSE */; };
+		FB06F8D126289C2000158182 /* BetterSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8BA26289C2000158182 /* BetterSegmentedControl.swift */; };
+		FB06F8D226289C2000158182 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8BB26289C2000158182 /* README.md */; };
+		FB06F8D426289C2000158182 /* BetterSegmentedControl.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8BF26289C2000158182 /* BetterSegmentedControl.release.xcconfig */; };
+		FB06F8D526289C2000158182 /* BetterSegmentedControl.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8C026289C2000158182 /* BetterSegmentedControl.debug.xcconfig */; };
+		FB06F8D926289C2000158182 /* BetterSegmentedControl+PredefinedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8C426289C2000158182 /* BetterSegmentedControl+PredefinedStyles.swift */; };
+		FB06F8DA26289C2000158182 /* BetterSegmentedControl+UIPointerInteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8C526289C2000158182 /* BetterSegmentedControl+UIPointerInteractionDelegate.swift */; };
+		FB06F8DB26289C2000158182 /* BetterSegmentedControl+IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8C626289C2000158182 /* BetterSegmentedControl+IBDesignable.swift */; };
+		FB06F8DC26289C2000158182 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8C826289C2000158182 /* UIView+Helpers.swift */; };
+		FB06F8DD26289C2000158182 /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8C926289C2000158182 /* UIColor+Helpers.swift */; };
+		FB06F8DE26289C2000158182 /* BetterSegmentedControl+IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8CA26289C2000158182 /* BetterSegmentedControl+IndicatorView.swift */; };
+		FB06F8DF26289C2000158182 /* IconSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8CC26289C2000158182 /* IconSegment.swift */; };
+		FB06F8E026289C2000158182 /* BetterSegmentedControlSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8CD26289C2000158182 /* BetterSegmentedControlSegment.swift */; };
+		FB06F8E126289C2000158182 /* LabelSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8CE26289C2000158182 /* LabelSegment.swift */; };
+		FB06F8E226289C2000158182 /* BetterSegmentedControl+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F8CF26289C2000158182 /* BetterSegmentedControl+Options.swift */; };
+		FB06F92726289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8E826289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png */; };
+		FB06F92826289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8E926289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png */; };
+		FB06F92926289C2800158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_an_expicit_size_is_set_in_Auto_Layout__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8EA26289C2800158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_an_expicit_size_is_set_in_Auto_Layout__the_control_renders_correctly@3x.png */; };
+		FB06F92A26289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_zero__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8EB26289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_zero__the_control_renders_correctly@3x.png */; };
+		FB06F92B26289C2800158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_10@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8EC26289C2800158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_10@3x.png */; };
+		FB06F92C26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_backgroundColor__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8ED26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_backgroundColor__the_control_renders_correctly@3x.png */; };
+		FB06F92D26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8EE26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png */; };
+		FB06F92E26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8EF26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png */; };
+		FB06F92F26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_cornerRadius__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F026289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_cornerRadius__the_control_renders_correctly@3x.png */; };
+		FB06F93026289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_0_segments__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F126289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_0_segments__the_control_renders_correctly@3x.png */; };
+		FB06F93126289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_3__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F226289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_3__the_control_renders_correctly@3x.png */; };
+		FB06F93226289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_one__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F326289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_one__renders_correctly@3x.png */; };
+		FB06F93326289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F426289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png */; };
+		FB06F93426289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewBorderWidth_property__the_control_renders_correctly_when_setting_it_to_4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F526289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewBorderWidth_property__the_control_renders_correctly_when_setting_it_to_4@3x.png */; };
+		FB06F93526289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F626289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png */; };
+		FB06F93626289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F726289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png */; };
+		FB06F93726289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_2_segments__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F826289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_2_segments__the_control_renders_correctly@3x.png */; };
+		FB06F93826289C2900158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8F926289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png */; };
+		FB06F93926289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBackgroundColor__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8FA26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBackgroundColor__the_control_renders_correctly@3x.png */; };
+		FB06F93A26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8FB26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png */; };
+		FB06F93B26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8FC26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png */; };
+		FB06F93C26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8FD26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two__renders_correctly@3x.png */; };
+		FB06F93D26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderWidth__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8FE26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderWidth__the_control_renders_correctly@3x.png */; };
+		FB06F93E26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_1_segment__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F8FF26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_1_segment__the_control_renders_correctly@3x.png */; };
+		FB06F93F26289C2900158182 /* a_BetterSegmentedControl__its_appleStyled_extension__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90026289C2800158182 /* a_BetterSegmentedControl__its_appleStyled_extension__renders_correctly@3x.png */; };
+		FB06F94026289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_one__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90126289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_one__renders_correctly@3x.png */; };
+		FB06F94126289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewBackgroundColor_property__the_control_renders_correctly_after_updating_it@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90226289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewBackgroundColor_property__the_control_renders_correctly_after_updating_it@3x.png */; };
+		FB06F94226289C2900158182 /* a_BetterSegmentedControl__when_adding_a_shadow_to_the_indicator_view__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90326289C2800158182 /* a_BetterSegmentedControl__when_adding_a_shadow_to_the_indicator_view__renders_correctly@3x.png */; };
+		FB06F94326289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewBorderColor_property__the_control_renders_correctly_when_setting_it_to_green@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90426289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewBorderColor_property__the_control_renders_correctly_when_setting_it_to_green@3x.png */; };
+		FB06F94426289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90526289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png */; };
+		FB06F94526289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_beyond_the_valid_segment_indices__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90626289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_beyond_the_valid_segment_indices__the_control_renders_correctly@3x.png */; };
+		FB06F94626289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_cornerRadius__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90726289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_cornerRadius__renders_correctly@3x.png */; };
+		FB06F94726289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90826289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two__renders_correctly@3x.png */; };
+		FB06F94826289C2900158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90926289C2800158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_0@3x.png */; };
+		FB06F94926289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_backgroundColor__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90A26289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_backgroundColor__renders_correctly@3x.png */; };
+		FB06F94A26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90B26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png */; };
+		FB06F94B26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_3_segments__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90C26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_3_segments__the_control_renders_correctly@3x.png */; };
+		FB06F94C26289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90D26289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_0@3x.png */; };
+		FB06F94D26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90E26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png */; };
+		FB06F94E26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F90F26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png */; };
+		FB06F94F26289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBackgroundColor__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91026289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBackgroundColor__renders_correctly@3x.png */; };
+		FB06F95026289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewInset__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91126289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewInset__renders_correctly@3x.png */; };
+		FB06F95126289C2900158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_28__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91226289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_28__the_control_renders_correctly@3x.png */; };
+		FB06F95226289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewInset__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91326289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewInset__the_control_renders_correctly@3x.png */; };
+		FB06F95326289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91426289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_4@3x.png */; };
+		FB06F95426289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91526289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two__renders_correctly@3x.png */; };
+		FB06F95526289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBorderWidth_and_indicatorViewBorderColor__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91626289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBorderWidth_and_indicatorViewBorderColor__renders_correctly@3x.png */; };
+		FB06F95626289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_zero__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91726289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_zero__renders_correctly@3x.png */; };
+		FB06F95726289C2900158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_the_control_auto_sizes_itself_in_Auto_Layout__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91826289C2800158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_the_control_auto_sizes_itself_in_Auto_Layout__the_control_renders_correctly@3x.png */; };
+		FB06F95826289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_zero__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91926289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_zero__renders_correctly@3x.png */; };
+		FB06F95926289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_minus_2__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91A26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_minus_2__the_control_renders_correctly@3x.png */; };
+		FB06F95A26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderColor__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91B26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderColor__the_control_renders_correctly@3x.png */; };
+		FB06F95B26289C2900158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_indicatorViewInset_then_cornerRadius__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91C26289C2800158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_indicatorViewInset_then_cornerRadius__renders_correctly@3x.png */; };
+		FB06F95C26289C2900158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_8__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91D26289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_8__the_control_renders_correctly@3x.png */; };
+		FB06F95D26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_one__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91E26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_one__renders_correctly@3x.png */; };
+		FB06F95E26289C2900158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_cornerRadius_then_indicatorViewInset__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F91F26289C2800158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_cornerRadius_then_indicatorViewInset__renders_correctly@3x.png */; };
+		FB06F95F26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_zero__renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F92026289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_zero__renders_correctly@3x.png */; };
+		FB06F96026289C2900158182 /* a_BetterSegmentedControl__its_init_frame___initializer__when_called__the_control_renders_correctly@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F92126289C2800158182 /* a_BetterSegmentedControl__its_init_frame___initializer__when_called__the_control_renders_correctly@3x.png */; };
+		FB06F96126289C2900158182 /* BetterSegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F92226289C2800158182 /* BetterSegmentedControlTests.swift */; };
+		FB06F96226289C2900158182 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB06F92326289C2800158182 /* Test.storyboard */; };
+		FB06F96326289C2900158182 /* TestViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F92426289C2800158182 /* TestViewControllers.swift */; };
+		FB06F96426289C2900158182 /* SnapshotHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F92526289C2800158182 /* SnapshotHelpers.swift */; };
+		FB06F96526289C2900158182 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB06F92626289C2800158182 /* Info.plist */; };
+		FB06F96F26289C3E00158182 /* logo-transparent-background.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F96B26289C3E00158182 /* logo-transparent-background.png */; };
+		FB06F97026289C3E00158182 /* demo_ipad_cursor.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB06F96C26289C3E00158182 /* demo_ipad_cursor.gif */; };
+		FB06F97126289C3E00158182 /* demo_main.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB06F96D26289C3E00158182 /* demo_main.gif */; };
+		FB06F97226289C3E00158182 /* logo-white-background.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06F96E26289C3E00158182 /* logo-white-background.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = BetterSegmentedControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04381095F08ECC8EEFC64A13 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1E28D1B6D916EEFE4B5E4A0E /* Pods-BetterSegmentedControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterSegmentedControl_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BetterSegmentedControl_Tests/Pods-BetterSegmentedControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		256A0E7AA21BCD0FBB5F9B14 /* Pods-BetterSegmentedControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterSegmentedControl_Tests.release.xcconfig"; path = "Target Support Files/Pods-BetterSegmentedControl_Tests/Pods-BetterSegmentedControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		51FA854ADEFFC841988D2B57 /* Pods-BetterSegmentedControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterSegmentedControl_Example.debug.xcconfig"; path = "Target Support Files/Pods-BetterSegmentedControl_Example/Pods-BetterSegmentedControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* BetterSegmentedControl_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterSegmentedControl_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* BetterSegmentedControl_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterSegmentedControl_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6CBB502D0B73524E163A5D /* Pods_BetterSegmentedControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetterSegmentedControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82FBC36B5CC2D9017CEACA5B /* BetterSegmentedControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BetterSegmentedControl.podspec; path = ../BetterSegmentedControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1415862753DECD62E911154 /* Pods-BetterSegmentedControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterSegmentedControl_Example.release.xcconfig"; path = "Target Support Files/Pods-BetterSegmentedControl_Example/Pods-BetterSegmentedControl_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F1A9C8DBDF29FA4096ECB1CD /* Pods_BetterSegmentedControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetterSegmentedControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8ECFF07790385FABB531EC7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FB06F7BA2628956E00158182 /* BetterSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BetterSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB06F8A626289C1500158182 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB06F8A826289C1500158182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FB06F8AA26289C1500158182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB06F8AB26289C1500158182 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB06F8AC26289C1500158182 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB06F8AD26289C1500158182 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB06F8B926289C2000158182 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FB06F8BA26289C2000158182 /* BetterSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterSegmentedControl.swift; sourceTree = "<group>"; };
+		FB06F8BB26289C2000158182 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FB06F8BF26289C2000158182 /* BetterSegmentedControl.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BetterSegmentedControl.release.xcconfig; sourceTree = "<group>"; };
+		FB06F8C026289C2000158182 /* BetterSegmentedControl.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BetterSegmentedControl.debug.xcconfig; sourceTree = "<group>"; };
+		FB06F8C326289C2000158182 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB06F8C426289C2000158182 /* BetterSegmentedControl+PredefinedStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BetterSegmentedControl+PredefinedStyles.swift"; sourceTree = "<group>"; };
+		FB06F8C526289C2000158182 /* BetterSegmentedControl+UIPointerInteractionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BetterSegmentedControl+UIPointerInteractionDelegate.swift"; sourceTree = "<group>"; };
+		FB06F8C626289C2000158182 /* BetterSegmentedControl+IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BetterSegmentedControl+IBDesignable.swift"; sourceTree = "<group>"; };
+		FB06F8C826289C2000158182 /* UIView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		FB06F8C926289C2000158182 /* UIColor+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
+		FB06F8CA26289C2000158182 /* BetterSegmentedControl+IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BetterSegmentedControl+IndicatorView.swift"; sourceTree = "<group>"; };
+		FB06F8CC26289C2000158182 /* IconSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconSegment.swift; sourceTree = "<group>"; };
+		FB06F8CD26289C2000158182 /* BetterSegmentedControlSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterSegmentedControlSegment.swift; sourceTree = "<group>"; };
+		FB06F8CE26289C2000158182 /* LabelSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSegment.swift; sourceTree = "<group>"; };
+		FB06F8CF26289C2000158182 /* BetterSegmentedControl+Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BetterSegmentedControl+Options.swift"; sourceTree = "<group>"; };
+		FB06F8E826289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8E926289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8EA26289C2800158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_an_expicit_size_is_set_in_Auto_Layout__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_an_expicit_size_is_set_in_Auto_Layout__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8EB26289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_zero__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_zero__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8EC26289C2800158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_10@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_10@3x.png"; sourceTree = "<group>"; };
+		FB06F8ED26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_backgroundColor__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_backgroundColor__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8EE26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8EF26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8F026289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_cornerRadius__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_cornerRadius__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8F126289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_0_segments__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_0_segments__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8F226289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_3__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_3__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8F326289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_one__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_one__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8F426289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8F526289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewBorderWidth_property__the_control_renders_correctly_when_setting_it_to_4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_indicatorViewBorderWidth_property__the_control_renders_correctly_when_setting_it_to_4@3x.png"; sourceTree = "<group>"; };
+		FB06F8F626289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8F726289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8F826289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_2_segments__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_2_segments__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8F926289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8FA26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBackgroundColor__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBackgroundColor__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8FB26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8FC26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8FD26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8FE26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderWidth__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderWidth__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F8FF26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_1_segment__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_1_segment__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90026289C2800158182 /* a_BetterSegmentedControl__its_appleStyled_extension__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_appleStyled_extension__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90126289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_one__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_one__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90226289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewBackgroundColor_property__the_control_renders_correctly_after_updating_it@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_indicatorViewBackgroundColor_property__the_control_renders_correctly_after_updating_it@3x.png"; sourceTree = "<group>"; };
+		FB06F90326289C2800158182 /* a_BetterSegmentedControl__when_adding_a_shadow_to_the_indicator_view__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__when_adding_a_shadow_to_the_indicator_view__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90426289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewBorderColor_property__the_control_renders_correctly_when_setting_it_to_green@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_indicatorViewBorderColor_property__the_control_renders_correctly_when_setting_it_to_green@3x.png"; sourceTree = "<group>"; };
+		FB06F90526289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90626289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_beyond_the_valid_segment_indices__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_beyond_the_valid_segment_indices__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90726289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_cornerRadius__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setOptions___method__when_setting_cornerRadius__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90826289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90926289C2800158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_0@3x.png"; sourceTree = "<group>"; };
+		FB06F90A26289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_backgroundColor__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setOptions___method__when_setting_backgroundColor__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90B26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90C26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_3_segments__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_3_segments__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90D26289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_0@3x.png"; sourceTree = "<group>"; };
+		FB06F90E26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F90F26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91026289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBackgroundColor__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBackgroundColor__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91126289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewInset__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewInset__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91226289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_28__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_28__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91326289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewInset__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewInset__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91426289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_4@3x.png"; sourceTree = "<group>"; };
+		FB06F91526289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91626289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBorderWidth_and_indicatorViewBorderColor__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBorderWidth_and_indicatorViewBorderColor__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91726289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_zero__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_zero__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91826289C2800158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_the_control_auto_sizes_itself_in_Auto_Layout__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_the_control_auto_sizes_itself_in_Auto_Layout__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91926289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_zero__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_zero__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91A26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_minus_2__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_minus_2__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91B26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderColor__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderColor__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91C26289C2800158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_indicatorViewInset_then_cornerRadius__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_indicatorViewInset_then_cornerRadius__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91D26289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_8__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_8__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91E26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_one__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_one__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F91F26289C2800158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_cornerRadius_then_indicatorViewInset__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_cornerRadius_then_indicatorViewInset__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F92026289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_zero__renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_zero__renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F92126289C2800158182 /* a_BetterSegmentedControl__its_init_frame___initializer__when_called__the_control_renders_correctly@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a_BetterSegmentedControl__its_init_frame___initializer__when_called__the_control_renders_correctly@3x.png"; sourceTree = "<group>"; };
+		FB06F92226289C2800158182 /* BetterSegmentedControlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterSegmentedControlTests.swift; sourceTree = "<group>"; };
+		FB06F92326289C2800158182 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		FB06F92426289C2800158182 /* TestViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewControllers.swift; sourceTree = "<group>"; };
+		FB06F92526289C2800158182 /* SnapshotHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelpers.swift; sourceTree = "<group>"; };
+		FB06F92626289C2800158182 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB06F96B26289C3E00158182 /* logo-transparent-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-transparent-background.png"; sourceTree = "<group>"; };
+		FB06F96C26289C3E00158182 /* demo_ipad_cursor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo_ipad_cursor.gif; sourceTree = "<group>"; };
+		FB06F96D26289C3E00158182 /* demo_main.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo_main.gif; sourceTree = "<group>"; };
+		FB06F96E26289C3E00158182 /* logo-white-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-white-background.png"; sourceTree = "<group>"; };
+		FB06F9862628A13F00158182 /* BetterSegmentedControl.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = BetterSegmentedControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D590334CF719CBE096277B9C /* Pods_BetterSegmentedControl_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE21AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C92EE51E41A8ADAB5A309A5 /* Pods_BetterSegmentedControl_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB06F7B72628956E00158182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		214E7BA029C34F4348AB21A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51FA854ADEFFC841988D2B57 /* Pods-BetterSegmentedControl_Example.debug.xcconfig */,
+				C1415862753DECD62E911154 /* Pods-BetterSegmentedControl_Example.release.xcconfig */,
+				1E28D1B6D916EEFE4B5E4A0E /* Pods-BetterSegmentedControl_Tests.debug.xcconfig */,
+				256A0E7AA21BCD0FBB5F9B14 /* Pods-BetterSegmentedControl_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				FB06F9862628A13F00158182 /* BetterSegmentedControl.podspec */,
+				FB06F8E526289C2800158182 /* Tests */,
+				FB06F8B826289C2000158182 /* Framework */,
+				FB06F8A526289C1500158182 /* Example */,
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD11AFB9204008FA782 /* Products */,
+				214E7BA029C34F4348AB21A5 /* Pods */,
+				7BFA8AE3314512B8A24A3F11 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD01AFB9204008FA782 /* BetterSegmentedControl_Example.app */,
+				607FACE51AFB9204008FA782 /* BetterSegmentedControl_Tests.xctest */,
+				FB06F7BA2628956E00158182 /* BetterSegmentedControl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				82FBC36B5CC2D9017CEACA5B /* BetterSegmentedControl.podspec */,
+				04381095F08ECC8EEFC64A13 /* README.md */,
+				F8ECFF07790385FABB531EC7 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		7BFA8AE3314512B8A24A3F11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B6CBB502D0B73524E163A5D /* Pods_BetterSegmentedControl_Example.framework */,
+				F1A9C8DBDF29FA4096ECB1CD /* Pods_BetterSegmentedControl_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB06F8A526289C1500158182 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				FB06F96A26289C3E00158182 /* Assets */,
+				FB06F8A626289C1500158182 /* ViewController.swift */,
+				FB06F8A726289C1500158182 /* LaunchScreen.xib */,
+				FB06F8A926289C1500158182 /* Main.storyboard */,
+				FB06F8AB26289C1500158182 /* Images.xcassets */,
+				FB06F8AC26289C1500158182 /* AppDelegate.swift */,
+				FB06F8AD26289C1500158182 /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		FB06F8B826289C2000158182 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				FB06F8B926289C2000158182 /* LICENSE */,
+				FB06F8BA26289C2000158182 /* BetterSegmentedControl.swift */,
+				FB06F8BB26289C2000158182 /* README.md */,
+				FB06F8BC26289C2000158182 /* BetterSegmentedControl */,
+				FB06F8C426289C2000158182 /* BetterSegmentedControl+PredefinedStyles.swift */,
+				FB06F8C526289C2000158182 /* BetterSegmentedControl+UIPointerInteractionDelegate.swift */,
+				FB06F8C626289C2000158182 /* BetterSegmentedControl+IBDesignable.swift */,
+				FB06F8C726289C2000158182 /* Helpers */,
+				FB06F8CA26289C2000158182 /* BetterSegmentedControl+IndicatorView.swift */,
+				FB06F8CB26289C2000158182 /* Segments */,
+				FB06F8CF26289C2000158182 /* BetterSegmentedControl+Options.swift */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		FB06F8BC26289C2000158182 /* BetterSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				FB06F8BF26289C2000158182 /* BetterSegmentedControl.release.xcconfig */,
+				FB06F8C026289C2000158182 /* BetterSegmentedControl.debug.xcconfig */,
+				FB06F8C326289C2000158182 /* Info.plist */,
+			);
+			path = BetterSegmentedControl;
+			sourceTree = "<group>";
+		};
+		FB06F8C726289C2000158182 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FB06F8C826289C2000158182 /* UIView+Helpers.swift */,
+				FB06F8C926289C2000158182 /* UIColor+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FB06F8CB26289C2000158182 /* Segments */ = {
+			isa = PBXGroup;
+			children = (
+				FB06F8CC26289C2000158182 /* IconSegment.swift */,
+				FB06F8CD26289C2000158182 /* BetterSegmentedControlSegment.swift */,
+				FB06F8CE26289C2000158182 /* LabelSegment.swift */,
+			);
+			path = Segments;
+			sourceTree = "<group>";
+		};
+		FB06F8E526289C2800158182 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FB06F8E626289C2800158182 /* ReferenceImages */,
+				FB06F92226289C2800158182 /* BetterSegmentedControlTests.swift */,
+				FB06F92326289C2800158182 /* Test.storyboard */,
+				FB06F92426289C2800158182 /* TestViewControllers.swift */,
+				FB06F92526289C2800158182 /* SnapshotHelpers.swift */,
+				FB06F92626289C2800158182 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		FB06F8E626289C2800158182 /* ReferenceImages */ = {
+			isa = PBXGroup;
+			children = (
+				FB06F8E726289C2800158182 /* BetterSegmentedControlTests */,
+			);
+			path = ReferenceImages;
+			sourceTree = "<group>";
+		};
+		FB06F8E726289C2800158182 /* BetterSegmentedControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB06F8E826289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png */,
+				FB06F8E926289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png */,
+				FB06F8EA26289C2800158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_an_expicit_size_is_set_in_Auto_Layout__the_control_renders_correctly@3x.png */,
+				FB06F8EB26289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_zero__the_control_renders_correctly@3x.png */,
+				FB06F8EC26289C2800158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_10@3x.png */,
+				FB06F8ED26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_backgroundColor__the_control_renders_correctly@3x.png */,
+				FB06F8EE26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png */,
+				FB06F8EF26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png */,
+				FB06F8F026289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_cornerRadius__the_control_renders_correctly@3x.png */,
+				FB06F8F126289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_0_segments__the_control_renders_correctly@3x.png */,
+				FB06F8F226289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_3__the_control_renders_correctly@3x.png */,
+				FB06F8F326289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_one__renders_correctly@3x.png */,
+				FB06F8F426289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png */,
+				FB06F8F526289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewBorderWidth_property__the_control_renders_correctly_when_setting_it_to_4@3x.png */,
+				FB06F8F626289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png */,
+				FB06F8F726289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png */,
+				FB06F8F826289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_2_segments__the_control_renders_correctly@3x.png */,
+				FB06F8F926289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png */,
+				FB06F8FA26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBackgroundColor__the_control_renders_correctly@3x.png */,
+				FB06F8FB26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png */,
+				FB06F8FC26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png */,
+				FB06F8FD26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two__renders_correctly@3x.png */,
+				FB06F8FE26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderWidth__the_control_renders_correctly@3x.png */,
+				FB06F8FF26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_1_segment__the_control_renders_correctly@3x.png */,
+				FB06F90026289C2800158182 /* a_BetterSegmentedControl__its_appleStyled_extension__renders_correctly@3x.png */,
+				FB06F90126289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_one__renders_correctly@3x.png */,
+				FB06F90226289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewBackgroundColor_property__the_control_renders_correctly_after_updating_it@3x.png */,
+				FB06F90326289C2800158182 /* a_BetterSegmentedControl__when_adding_a_shadow_to_the_indicator_view__renders_correctly@3x.png */,
+				FB06F90426289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewBorderColor_property__the_control_renders_correctly_when_setting_it_to_green@3x.png */,
+				FB06F90526289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png */,
+				FB06F90626289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_beyond_the_valid_segment_indices__the_control_renders_correctly@3x.png */,
+				FB06F90726289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_cornerRadius__renders_correctly@3x.png */,
+				FB06F90826289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two__renders_correctly@3x.png */,
+				FB06F90926289C2800158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_0@3x.png */,
+				FB06F90A26289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_backgroundColor__renders_correctly@3x.png */,
+				FB06F90B26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png */,
+				FB06F90C26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_3_segments__the_control_renders_correctly@3x.png */,
+				FB06F90D26289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_0@3x.png */,
+				FB06F90E26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png */,
+				FB06F90F26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png */,
+				FB06F91026289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBackgroundColor__renders_correctly@3x.png */,
+				FB06F91126289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewInset__renders_correctly@3x.png */,
+				FB06F91226289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_28__the_control_renders_correctly@3x.png */,
+				FB06F91326289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewInset__the_control_renders_correctly@3x.png */,
+				FB06F91426289C2800158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_4@3x.png */,
+				FB06F91526289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two__renders_correctly@3x.png */,
+				FB06F91626289C2800158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBorderWidth_and_indicatorViewBorderColor__renders_correctly@3x.png */,
+				FB06F91726289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_zero__renders_correctly@3x.png */,
+				FB06F91826289C2800158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_the_control_auto_sizes_itself_in_Auto_Layout__the_control_renders_correctly@3x.png */,
+				FB06F91926289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_zero__renders_correctly@3x.png */,
+				FB06F91A26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_minus_2__the_control_renders_correctly@3x.png */,
+				FB06F91B26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderColor__the_control_renders_correctly@3x.png */,
+				FB06F91C26289C2800158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_indicatorViewInset_then_cornerRadius__renders_correctly@3x.png */,
+				FB06F91D26289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_8__the_control_renders_correctly@3x.png */,
+				FB06F91E26289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_one__renders_correctly@3x.png */,
+				FB06F91F26289C2800158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_cornerRadius_then_indicatorViewInset__renders_correctly@3x.png */,
+				FB06F92026289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_zero__renders_correctly@3x.png */,
+				FB06F92126289C2800158182 /* a_BetterSegmentedControl__its_init_frame___initializer__when_called__the_control_renders_correctly@3x.png */,
+			);
+			path = BetterSegmentedControlTests;
+			sourceTree = "<group>";
+		};
+		FB06F96A26289C3E00158182 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FB06F96B26289C3E00158182 /* logo-transparent-background.png */,
+				FB06F96C26289C3E00158182 /* demo_ipad_cursor.gif */,
+				FB06F96D26289C3E00158182 /* demo_main.gif */,
+				FB06F96E26289C3E00158182 /* logo-white-background.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FB06F7B52628956E00158182 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		607FACCF1AFB9204008FA782 /* BetterSegmentedControl_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "BetterSegmentedControl_Example" */;
+			buildPhases = (
+				760A3558693DF74F766D6970 /* [CP] Check Pods Manifest.lock */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
+				07438FB3AEF9FDAF31CA9B75 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetterSegmentedControl_Example;
+			productName = BetterSegmentedControl;
+			productReference = 607FACD01AFB9204008FA782 /* BetterSegmentedControl_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		607FACE41AFB9204008FA782 /* BetterSegmentedControl_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "BetterSegmentedControl_Tests" */;
+			buildPhases = (
+				EA7F3BE56B7BD8D173877007 /* [CP] Check Pods Manifest.lock */,
+				607FACE11AFB9204008FA782 /* Sources */,
+				607FACE21AFB9204008FA782 /* Frameworks */,
+				607FACE31AFB9204008FA782 /* Resources */,
+				219906447621B2E4262AE29A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+			);
+			name = BetterSegmentedControl_Tests;
+			productName = Tests;
+			productReference = 607FACE51AFB9204008FA782 /* BetterSegmentedControl_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB06F7B92628956E00158182 /* BetterSegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB06F7C32628956E00158182 /* Build configuration list for PBXNativeTarget "BetterSegmentedControl" */;
+			buildPhases = (
+				FB06F7B52628956E00158182 /* Headers */,
+				FB06F7B62628956E00158182 /* Sources */,
+				FB06F7B72628956E00158182 /* Frameworks */,
+				FB06F7B82628956E00158182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetterSegmentedControl;
+			productName = BetterSegmentedControl;
+			productReference = FB06F7BA2628956E00158182 /* BetterSegmentedControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 1020;
+					};
+					607FACE41AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					FB06F7B92628956E00158182 = {
+						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "BetterSegmentedControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607FACCF1AFB9204008FA782 /* BetterSegmentedControl_Example */,
+				607FACE41AFB9204008FA782 /* BetterSegmentedControl_Tests */,
+				FB06F7B92628956E00158182 /* BetterSegmentedControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		607FACCE1AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB06F97226289C3E00158182 /* logo-white-background.png in Resources */,
+				FB06F8B126289C1500158182 /* Images.xcassets in Resources */,
+				FB06F8AF26289C1500158182 /* LaunchScreen.xib in Resources */,
+				FB06F96F26289C3E00158182 /* logo-transparent-background.png in Resources */,
+				FB06F8B026289C1500158182 /* Main.storyboard in Resources */,
+				FB06F97126289C3E00158182 /* demo_main.gif in Resources */,
+				FB06F97026289C3E00158182 /* demo_ipad_cursor.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB06F94526289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_beyond_the_valid_segment_indices__the_control_renders_correctly@3x.png in Resources */,
+				FB06F93C26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two__renders_correctly@3x.png in Resources */,
+				FB06F92E26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png in Resources */,
+				FB06F95D26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_one__renders_correctly@3x.png in Resources */,
+				FB06F94026289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_one__renders_correctly@3x.png in Resources */,
+				FB06F95E26289C2900158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_cornerRadius_then_indicatorViewInset__renders_correctly@3x.png in Resources */,
+				FB06F93E26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_1_segment__the_control_renders_correctly@3x.png in Resources */,
+				FB06F92926289C2800158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_an_expicit_size_is_set_in_Auto_Layout__the_control_renders_correctly@3x.png in Resources */,
+				FB06F96526289C2900158182 /* Info.plist in Resources */,
+				FB06F93B26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png in Resources */,
+				FB06F95926289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_an_invalid_index__that_is_minus_2__the_control_renders_correctly@3x.png in Resources */,
+				FB06F94D26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png in Resources */,
+				FB06F93A26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png in Resources */,
+				FB06F94926289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_backgroundColor__renders_correctly@3x.png in Resources */,
+				FB06F93526289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png in Resources */,
+				FB06F94326289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewBorderColor_property__the_control_renders_correctly_when_setting_it_to_green@3x.png in Resources */,
+				FB06F94C26289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_0@3x.png in Resources */,
+				FB06F93726289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_2_segments__the_control_renders_correctly@3x.png in Resources */,
+				FB06F92726289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_two_and_then_three__renders_correctly@3x.png in Resources */,
+				FB06F92F26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_cornerRadius__the_control_renders_correctly@3x.png in Resources */,
+				FB06F95B26289C2900158182 /* a_BetterSegmentedControl__when_setting_cornerRadius_and_indicatorViewInset__first_indicatorViewInset_then_cornerRadius__renders_correctly@3x.png in Resources */,
+				FB06F93226289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_one__renders_correctly@3x.png in Resources */,
+				FB06F95126289C2900158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_28__the_control_renders_correctly@3x.png in Resources */,
+				FB06F94126289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewBackgroundColor_property__the_control_renders_correctly_after_updating_it@3x.png in Resources */,
+				FB06F94B26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_3_segments__the_control_renders_correctly@3x.png in Resources */,
+				FB06F93926289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBackgroundColor__the_control_renders_correctly@3x.png in Resources */,
+				FB06F95026289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewInset__renders_correctly@3x.png in Resources */,
+				FB06F93626289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png in Resources */,
+				FB06F93426289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewBorderWidth_property__the_control_renders_correctly_when_setting_it_to_4@3x.png in Resources */,
+				FB06F94826289C2900158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_0@3x.png in Resources */,
+				FB06F95626289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_zero__renders_correctly@3x.png in Resources */,
+				FB06F93326289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png in Resources */,
+				FB06F94226289C2900158182 /* a_BetterSegmentedControl__when_adding_a_shadow_to_the_indicator_view__renders_correctly@3x.png in Resources */,
+				FB06F94A26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_2__the_control_renders_correctly@3x.png in Resources */,
+				FB06F95726289C2900158182 /* a_BetterSegmentedControl__its_init_coder___initializer__when_called__when_the_control_auto_sizes_itself_in_Auto_Layout__the_control_renders_correctly@3x.png in Resources */,
+				FB06F92D26289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_1__the_control_renders_correctly@3x.png in Resources */,
+				FB06F93F26289C2900158182 /* a_BetterSegmentedControl__its_appleStyled_extension__renders_correctly@3x.png in Resources */,
+				FB06F94626289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_cornerRadius__renders_correctly@3x.png in Resources */,
+				FB06F93D26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderWidth__the_control_renders_correctly@3x.png in Resources */,
+				FB06F95326289C2900158182 /* a_BetterSegmentedControl__its_indicatorViewInset_property__the_control_renders_correctly_when_setting_it_to_4@3x.png in Resources */,
+				FB06F95226289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewInset__the_control_renders_correctly@3x.png in Resources */,
+				FB06F95426289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_two_segments__when_setting_segments_to_two__renders_correctly@3x.png in Resources */,
+				FB06F93826289C2900158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png in Resources */,
+				FB06F96026289C2900158182 /* a_BetterSegmentedControl__its_init_frame___initializer__when_called__the_control_renders_correctly@3x.png in Resources */,
+				FB06F95826289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_zero__renders_correctly@3x.png in Resources */,
+				FB06F92A26289C2800158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_zero__the_control_renders_correctly@3x.png in Resources */,
+				FB06F94726289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_zero_segments__when_setting_segments_to_two__renders_correctly@3x.png in Resources */,
+				FB06F92C26289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_backgroundColor__the_control_renders_correctly@3x.png in Resources */,
+				FB06F94426289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_minus_1__the_control_renders_correctly@3x.png in Resources */,
+				FB06F96226289C2900158182 /* Test.storyboard in Resources */,
+				FB06F93026289C2800158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_0_segments__the_control_renders_correctly@3x.png in Resources */,
+				FB06F95C26289C2900158182 /* a_BetterSegmentedControl__its_segmentPadding_property__when_setting_it_to_8__the_control_renders_correctly@3x.png in Resources */,
+				FB06F92826289C2800158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_three_and_then_two__renders_correctly@3x.png in Resources */,
+				FB06F95A26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_options__setting_the_indicatorViewBorderColor__the_control_renders_correctly@3x.png in Resources */,
+				FB06F93126289C2800158182 /* a_BetterSegmentedControl__its_setIndex___method__when_called_with_a_valid_index__that_is_3__the_control_renders_correctly@3x.png in Resources */,
+				FB06F94E26289C2900158182 /* a_BetterSegmentedControl__its_init_frame_segments_index_options___initializer__when_calling_it__with_a_valid_index__that_is_0__the_control_renders_correctly@3x.png in Resources */,
+				FB06F95526289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBorderWidth_and_indicatorViewBorderColor__renders_correctly@3x.png in Resources */,
+				FB06F95F26289C2900158182 /* a_BetterSegmentedControl__its_segments_property__when_the_control_is_initialized_with_one_segment__when_setting_segments_to_zero__renders_correctly@3x.png in Resources */,
+				FB06F92B26289C2800158182 /* a_BetterSegmentedControl__its_cornerRadius_property__the_control_renders_correctly_when_setting_it_to_10@3x.png in Resources */,
+				FB06F94F26289C2900158182 /* a_BetterSegmentedControl__its_setOptions___method__when_setting_indicatorViewBackgroundColor__renders_correctly@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB06F7B82628956E00158182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB06F8D526289C2000158182 /* BetterSegmentedControl.debug.xcconfig in Resources */,
+				FB06F8D226289C2000158182 /* README.md in Resources */,
+				FB06F8D426289C2000158182 /* BetterSegmentedControl.release.xcconfig in Resources */,
+				FB06F8D026289C2000158182 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07438FB3AEF9FDAF31CA9B75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BetterSegmentedControl_Example/Pods-BetterSegmentedControl_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BetterSegmentedControl/BetterSegmentedControl.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BetterSegmentedControl.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BetterSegmentedControl_Example/Pods-BetterSegmentedControl_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		219906447621B2E4262AE29A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BetterSegmentedControl_Tests/Pods-BetterSegmentedControl_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BetterSegmentedControl/BetterSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BetterSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BetterSegmentedControl_Tests/Pods-BetterSegmentedControl_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760A3558693DF74F766D6970 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetterSegmentedControl_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7F3BE56B7BD8D173877007 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetterSegmentedControl_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		607FACCC1AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB06F8B226289C1500158182 /* AppDelegate.swift in Sources */,
+				FB06F8AE26289C1500158182 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE11AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB06F96326289C2900158182 /* TestViewControllers.swift in Sources */,
+				FB06F96126289C2900158182 /* BetterSegmentedControlTests.swift in Sources */,
+				FB06F96426289C2900158182 /* SnapshotHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB06F7B62628956E00158182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB06F8DA26289C2000158182 /* BetterSegmentedControl+UIPointerInteractionDelegate.swift in Sources */,
+				FB06F8E226289C2000158182 /* BetterSegmentedControl+Options.swift in Sources */,
+				FB06F8E126289C2000158182 /* LabelSegment.swift in Sources */,
+				FB06F8D926289C2000158182 /* BetterSegmentedControl+PredefinedStyles.swift in Sources */,
+				FB06F8DD26289C2000158182 /* UIColor+Helpers.swift in Sources */,
+				FB06F8DE26289C2000158182 /* BetterSegmentedControl+IndicatorView.swift in Sources */,
+				FB06F8D126289C2000158182 /* BetterSegmentedControl.swift in Sources */,
+				FB06F8DB26289C2000158182 /* BetterSegmentedControl+IBDesignable.swift in Sources */,
+				FB06F8E026289C2000158182 /* BetterSegmentedControlSegment.swift in Sources */,
+				FB06F8DC26289C2000158182 /* UIView+Helpers.swift in Sources */,
+				FB06F8DF26289C2000158182 /* IconSegment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* BetterSegmentedControl_Example */;
+			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB06F8A726289C1500158182 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB06F8A826289C1500158182 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		FB06F8A926289C1500158182 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB06F8AA26289C1500158182 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		607FACF01AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51FA854ADEFFC841988D2B57 /* Pods-BetterSegmentedControl_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		607FACF11AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1415862753DECD62E911154 /* Pods-BetterSegmentedControl_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		607FACF31AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E28D1B6D916EEFE4B5E4A0E /* Pods-BetterSegmentedControl_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterSegmentedControl_Example.app/BetterSegmentedControl_Example";
+			};
+			name = Debug;
+		};
+		607FACF41AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256A0E7AA21BCD0FBB5F9B14 /* Pods-BetterSegmentedControl_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterSegmentedControl_Example.app/BetterSegmentedControl_Example";
+			};
+			name = Release;
+		};
+		FB06F7C42628956E00158182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB06F8C026289C2000158182 /* BetterSegmentedControl.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Framework/BetterSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.BetterSegmentedControl;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB06F7C52628956E00158182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB06F8BF26289C2000158182 /* BetterSegmentedControl.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Framework/BetterSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.BetterSegmentedControl;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "BetterSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "BetterSegmentedControl_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "BetterSegmentedControl_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF31AFB9204008FA782 /* Debug */,
+				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB06F7C32628956E00158182 /* Build configuration list for PBXNativeTarget "BetterSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB06F7C42628956E00158182 /* Debug */,
+				FB06F7C52628956E00158182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}
